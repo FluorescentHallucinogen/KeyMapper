@@ -525,6 +525,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#key-maps-for-an-external-device-randomly-stop-working-after-a-reboot" class="md-nav__link">
+    Key maps for an external device randomly stop working after a reboot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#volume-increases-to-maxminimum-when-pressing-power-and-the-respective-volume-button-when-the-device-is-off" class="md-nav__link">
     Volume increases to max/minimum when pressing power and the respective volume button when the device is off
   </a>
@@ -579,6 +586,13 @@
         <li class="md-nav__item">
   <a href="#external-keyboard-language-is-set-to-english-us-when-using-key-mapper-android-11-only" class="md-nav__link">
     External keyboard language is set to English US when using Key Mapper (Android 11 only)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-maps-for-an-external-device-randomly-stop-working-after-a-reboot" class="md-nav__link">
+    Key maps for an external device randomly stop working after a reboot
   </a>
   
 </li>
@@ -641,6 +655,10 @@
 </ol>
 <h2 id="external-keyboard-language-is-set-to-english-us-when-using-key-mapper-android-11-only">External keyboard language is set to English US when using Key Mapper (Android 11 only)<a class="headerlink" href="#external-keyboard-language-is-set-to-english-us-when-using-key-mapper-android-11-only" title="Permanent link">&para;</a></h2>
 <p>This is a bug in Android 11 and should be fixed in Android 12. There is a setting in Key Mapper 2.3.0+ that helps you work around this issue. Read more <a href="https://sds100.github.io/KeyMapper/redirects/android-11-device-id-bug-work-around">here</a>.</p>
+<h2 id="key-maps-for-an-external-device-randomly-stop-working-after-a-reboot">Key maps for an external device randomly stop working after a reboot<a class="headerlink" href="#key-maps-for-an-external-device-randomly-stop-working-after-a-reboot" title="Permanent link">&para;</a></h2>
+<p>See issue <a href="https://github.com/sds100/KeyMapper/issues/783">#783</a>.</p>
+<p><strong>Problem</strong>: Key Mapper uses the device id (a.k.a descriptor) to ensure triggers from specific devices are only detected. The ids for some devices change after every reboot, which breaks this filtering. This is not supposed to happen but fortunately it only happens very rarely.
+<strong>Solution</strong>: Set the device for the trigger to "any device" so Key Mapper accepts the trigger from any device.</p>
 <h2 id="volume-increases-to-maxminimum-when-pressing-power-and-the-respective-volume-button-when-the-device-is-off">Volume increases to max/minimum when pressing power and the respective volume button when the device is off<a class="headerlink" href="#volume-increases-to-maxminimum-when-pressing-power-and-the-respective-volume-button-when-the-device-is-off" title="Permanent link">&para;</a></h2>
 <p>This seems to be a bug with accessibility services on Android Pie+ on some devices. It also happens with the Macrodroid app when you only enable their accessibility service which filters key events. I tested Key Mapper with no code in the onKeyEvent function in the accessibility service and it still happens. These are the devices that I've tested.</p>
 <ul>
