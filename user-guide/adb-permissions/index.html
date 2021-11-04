@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.keymapper.club/user-guide/adb-permissions/">
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1c75ef36.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#write_secure_settings" class="md-skip">
+        <a href="#prepare-adb-android-debug-bridge" class="md-skip">
           Skip to content
         </a>
       
@@ -386,6 +386,8 @@
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -398,6 +400,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
+    Prepare ADB (Android Debug Bridge)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#write_secure_settings" class="md-nav__link">
     WRITE_SECURE_SETTINGS
   </a>
@@ -407,13 +416,6 @@
         <li class="md-nav__item">
   <a href="#enabling-the-accessibility-service" class="md-nav__link">
     Enabling the Accessibility Service
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
-    Prepare ADB (Android Debug Bridge)
   </a>
   
 </li>
@@ -546,6 +548,8 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -558,6 +562,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
+    Prepare ADB (Android Debug Bridge)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#write_secure_settings" class="md-nav__link">
     WRITE_SECURE_SETTINGS
   </a>
@@ -567,13 +578,6 @@
         <li class="md-nav__item">
   <a href="#enabling-the-accessibility-service" class="md-nav__link">
     Enabling the Accessibility Service
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
-    Prepare ADB (Android Debug Bridge)
   </a>
   
 </li>
@@ -597,52 +601,8 @@
                 
                   <h1>ADB Permissions</h1>
                 
-                <h2 id="write_secure_settings">WRITE_SECURE_SETTINGS<a class="headerlink" href="#write_secure_settings" title="Permanent link">&para;</a></h2>
-<p>There are 3 ways to grant this permission.</p>
-<ul>
-<li>
-<p>Use Shizuku (Key Mapper 2.4.0+ only). This is recommended on all devices running Android 11 and newer. This requires some setting up. Read the guide <a href="../shizuku/">here</a>.</p>
-</li>
-<li>
-<p>If your device is <strong>rooted</strong>, Key Mapper can grant itself these permissions by enabling the "Key Mapper has root permission" toggle in the Key Mapper settings.</p>
-</li>
-<li>
-<p>If your device is <strong>not rooted</strong> and you don't want to use Shizuku you must do the following...</p>
-<ol>
-<li>
-<p>Follow the "Prepare ADB" guide at the bottom of this page.</p>
-</li>
-<li>
-<p>Type or paste in a terminal:</p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span><code>adb shell pm grant io.github.sds100.keymapper android.permission.WRITE_SECURE_SETTINGS
-</code></pre></div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>For CI builds (the app icon with a green square) the package name is <code>io.github.sds100.keymapper.ci</code>.
-For Debug builds (the app icon with a yellow square) the package name is <code>io.github.sds100.keymapper.debug</code>.</p>
-</div>
-<p>These permissions persist across reboots but need to be granted again if the app is reinstalled.</p>
-</li>
-</ul>
-<h2 id="enabling-the-accessibility-service">Enabling the Accessibility Service<a class="headerlink" href="#enabling-the-accessibility-service" title="Permanent link">&para;</a></h2>
-<p>You may wish to enable Key Mapper's accessibility service using ADB if you cannot do so in-app due to manufacturer constraints.</p>
-<ol>
-<li>
-<p>Follow the "Prepare ADB" guide at the bottom of this page.</p>
-</li>
-<li>
-<p>To add Key Mapper to the List of the enabled accessibility providers, type or paste in a terminal:</p>
-<div class="highlight"><pre><span></span><code>adb shell settings put secure enabled_accessibility_services io.github.sds100.keymapper/io.github.sds100.keymapper.service.MyAccessibilityService
-</code></pre></div>
-</li>
-</ol>
-<h2 id="prepare-adb-android-debug-bridge">Prepare ADB (Android Debug Bridge)<a class="headerlink" href="#prepare-adb-android-debug-bridge" title="Permanent link">&para;</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You might need to attempt this process multiple times because it can be flaky.</p>
-</div>
+                <h2 id="prepare-adb-android-debug-bridge">Prepare ADB (Android Debug Bridge)<a class="headerlink" href="#prepare-adb-android-debug-bridge" title="Permanent link">&para;</a></h2>
+<p>!!! tip You might need to attempt this process multiple times because it can be flaky.</p>
 <ol>
 <li>
 <p>Enable developer options on your device by going to device Settings -&gt; 'About Phone' and tapping 'Build Number' many times until it says you've enabled developer options. The location of the Build Number may vary between devices.</p>
@@ -662,17 +622,64 @@ For Debug builds (the app icon with a yellow square) the package name is <code>i
 </li>
 <li>
 <p>Type or paste in a terminal: <code>adb devices</code> and your device then click the prompt on your phone to allow USB debugging from your PC.</p>
-<details class="info"><summary>Prompt on phone</summary><p><img alt="" src="../../images/android-allow-usb-debugging-dialog.png" /></p>
-</details>
+</li>
+</ol>
+<p>??? info "Prompt on phone"
+        <img alt="" src="../../images/android-allow-usb-debugging-dialog.png" /></p>
+<ol>
+<li>Type <code>adb devices</code> again and make sure you see the correct output as shown below.</li>
+</ol>
+<p>??? success "Correct command prompt output"
+   <img alt="" src="../../images/command-prompt-adb-devices-success.png" /></p>
+<p>??? failure "Incorrect command prompt outputs"
+   <img alt="" src="../../images/command-prompt-adb-devices-no-devices.png" />
+   <img alt="" src="../../images/command-prompt-adb-devices-offline.png" />
+   <img alt="" src="../../images/command-prompt-adb-devices-unauthorized.png" /></p>
+<h2 id="write_secure_settings">WRITE_SECURE_SETTINGS<a class="headerlink" href="#write_secure_settings" title="Permanent link">&para;</a></h2>
+<p>There are 3 ways to grant this permission.</p>
+<ul>
+<li>
+<p>Use Shizuku (Key Mapper 2.4.0+ only). This is recommended on all devices running Android 11 and
+  newer. This requires some setting up. Read the guide <a href="../shizuku/">here</a>.</p>
 </li>
 <li>
-<p>Type <code>adb devices</code> again and make sure you see the correct output as shown below.</p>
-<details class="success"><summary>Correct command prompt output</summary><p><img alt="" src="../../images/command-prompt-adb-devices-success.png" /></p>
-</details>
-<details class="failure"><summary>Incorrect command prompt outputs</summary><p><img alt="" src="../../images/command-prompt-adb-devices-no-devices.png" />
-<img alt="" src="../../images/command-prompt-adb-devices-offline.png" />
-<img alt="" src="../../images/command-prompt-adb-devices-unauthorized.png" /></p>
-</details>
+<p>If your device is <strong>rooted</strong>, Key Mapper can grant itself these permissions by enabling the "Key
+  Mapper has root permission" toggle in the Key Mapper settings.</p>
+</li>
+<li>
+<p>If your device is <strong>not rooted</strong> and you don't want to use Shizuku you must do the following...</p>
+<ol>
+<li>
+<p>Follow the "Prepare ADB" guide at the top of this page.</p>
+</li>
+<li>
+<p>Type or paste in a terminal:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code>adb shell pm grant io.github.sds100.keymapper android.permission.WRITE_SECURE_SETTINGS
+</code></pre></div>
+</li>
+</ul>
+<p>!!! attention For CI builds (the app icon with a green square) the package name
+  is <code>io.github.sds100.keymapper.ci</code>. For Debug builds (the app icon with a yellow square) the
+  package name is <code>io.github.sds100.keymapper.debug</code>.</p>
+<p>These permissions persist across reboots but need to be granted again if the app is reinstalled.</p>
+<h2 id="enabling-the-accessibility-service">Enabling the Accessibility Service<a class="headerlink" href="#enabling-the-accessibility-service" title="Permanent link">&para;</a></h2>
+<p>You may wish to enable Key Mapper's accessibility service using ADB if you cannot do so in-app due
+to manufacturer constraints.</p>
+<ol>
+<li>
+<p>Follow the "Prepare ADB" guide at the top of this page.</p>
+</li>
+<li>
+<p>To add Key Mapper to the List of the enabled accessibility providers, type or paste in a
+   terminal:</p>
+<div class="highlight"><pre><span></span><code>adb shell settings put secure enabled_accessibility_services io.github.sds100.keymapper/io.github.sds100.keymapper.service.MyAccessibilityService
+</code></pre></div>
+</li>
+<li>
+<p>It is recommended to also follow the instructions to grant the WRITE_SECURE_SETTINGS permission
+   on this page so Key Mapper can start and stop the accessibility service itself.</p>
 </li>
 </ol>
                 
@@ -913,10 +920,10 @@ For Debug builds (the app icon with a yellow square) the package name is <code>i
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.e99e714c.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c7d1b464.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>
