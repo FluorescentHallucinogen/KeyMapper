@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.keymapper.club/user-guide/actions/">
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.11">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50e68009.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -34,8 +34,9 @@
     
       
         
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -66,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#app" class="md-skip">
+        <a href="#open-app" class="md-skip">
           Skip to content
         </a>
       
@@ -338,29 +339,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#app" class="md-nav__link">
-    App
+  <a href="#open-app" class="md-nav__link">
+    Open app
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#app-shortcut" class="md-nav__link">
-    App shortcut
+  <a href="#launch-app-shortcut" class="md-nav__link">
+    Launch app shortcut
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-code" class="md-nav__link">
-    Key code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    Key
+  <a href="#input-key-code" class="md-nav__link">
+    Input key code
   </a>
   
 </li>
@@ -373,15 +367,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-event-210" class="md-nav__link">
-    Key event (2.1.0+)
+  <a href="#input-key-event-210" class="md-nav__link">
+    Input key event (2.1.0+)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#text" class="md-nav__link">
-    Text
+  <a href="#input-text" class="md-nav__link">
+    Input text
   </a>
   
 </li>
@@ -390,6 +384,26 @@
   <a href="#intent-230" class="md-nav__link">
     Intent (2.3.0+)
   </a>
+  
+    <nav class="md-nav" aria-label="Intent (2.3.0+)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -401,386 +415,380 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sound-240" class="md-nav__link">
-    Sound (2.4.0+)
+  <a href="#play-sound-240" class="md-nav__link">
+    Play sound (2.4.0+)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#system" class="md-nav__link">
-    System
-  </a>
-  
-    <nav class="md-nav" aria-label="System">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#toggleenabledisable-wifi" class="md-nav__link">
     Toggle/enable/disable WiFi
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-bluetooth" class="md-nav__link">
     Toggle/enable/disable Bluetooth
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-mobile-data" class="md-nav__link">
     Toggle/enable/disable mobile data
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-auto-brightness" class="md-nav__link">
     Toggle/enable/disable auto brightness
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#increasedecrease-brightness" class="md-nav__link">
     Increase/decrease brightness
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-auto-rotate" class="md-nav__link">
     Toggle/enable/disable auto-rotate
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#set-screen-to-portraitlandscape" class="md-nav__link">
     Set screen to portrait/landscape
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#set-screen-orientation-to-0-90-180-or-270" class="md-nav__link">
     Set screen orientation to 0°, 90°, 180° or 270°
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#cycle-through-screen-orientations" class="md-nav__link">
     Cycle through screen orientations
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#volume-updown" class="md-nav__link">
     Volume up/down
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#muteun-mutetoggle-volume-android-60" class="md-nav__link">
     Mute/un-mute/toggle volume (Android 6.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#show-volume-popup" class="md-nav__link">
     Show volume popup
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#increasedecrease-volume-stream" class="md-nav__link">
     Increase/decrease volume stream
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#cycle-through-ringer-modes" class="md-nav__link">
     Cycle through ringer modes
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#change-ringer-mode" class="md-nav__link">
     Change ringer mode
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#cycle-between-vibrate-and-ring" class="md-nav__link">
     Cycle between vibrate and ring
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-do-not-disturb-mode-android-60" class="md-nav__link">
     Toggle/enable/disable do not disturb mode (Android 6.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#expandtoggle-notification-drawer" class="md-nav__link">
     Expand/toggle notification drawer
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#expandtoggle-quick-settings" class="md-nav__link">
     Expand/toggle quick settings
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#collapse-the-status-bar" class="md-nav__link">
     Collapse the status bar
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#playpausetoggle-media" class="md-nav__link">
     Play/pause/toggle media
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#next-track" class="md-nav__link">
     Next track
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#previous-track" class="md-nav__link">
     Previous track
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#fast-forward" class="md-nav__link">
     Fast forward
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#rewind" class="md-nav__link">
     Rewind
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#go-back" class="md-nav__link">
     Go back
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#go-home" class="md-nav__link">
     Go home
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-recent-apps" class="md-nav__link">
     Open recent apps
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggle-split-screen-android-70" class="md-nav__link">
     Toggle split screen (Android 7.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#go-to-the-last-app-android-70" class="md-nav__link">
     Go to the last app (Android 7.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-menu" class="md-nav__link">
     Open menu
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-flashlight" class="md-nav__link">
     Toggle/enable/disable flashlight
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-nfc" class="md-nav__link">
     Toggle/enable/disable NFC
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#move-cursor-to-the-end-of-text" class="md-nav__link">
     Move cursor to the end of text
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleshowhide-on-screen-keyboard-android-70" class="md-nav__link">
     Toggle/show/hide on-screen keyboard (Android 7.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#show-keyboard-picker-up-to-android-90" class="md-nav__link">
     Show keyboard picker (up to Android 9.0)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#cutcopypaste" class="md-nav__link">
     Cut/copy/paste
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#select-word-at-cursor" class="md-nav__link">
     Select word at cursor
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#switch-keyboard" class="md-nav__link">
     Switch keyboard
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-airplane-mode" class="md-nav__link">
     Toggle/enable/disable airplane mode
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#take-screenshot" class="md-nav__link">
     Take screenshot
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-voice-assistant" class="md-nav__link">
     Open voice assistant
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-device-assistant" class="md-nav__link">
     Open device assistant
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-camera-app" class="md-nav__link">
     Open camera app
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-settings-app" class="md-nav__link">
     Open settings app
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#lock-device" class="md-nav__link">
     Lock device
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#secure-lock-device" class="md-nav__link">
     Secure lock device
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#turn-onoff-device" class="md-nav__link">
     Turn on/off device
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#show-power-menu" class="md-nav__link">
     Show power menu
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
+  <a href="#answerend-phone-call-240" class="md-nav__link">
+    Answer/end phone call (2.4.0+)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#do-nothing" class="md-nav__link">
     Do nothing
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#dismiss-all-notifications-240" class="md-nav__link">
     Dismiss all notifications (2.4.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#dismiss-most-recent-notification-240" class="md-nav__link">
     Dismiss most recent notification (2.4.0+)
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -981,29 +989,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#app" class="md-nav__link">
-    App
+  <a href="#open-app" class="md-nav__link">
+    Open app
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#app-shortcut" class="md-nav__link">
-    App shortcut
+  <a href="#launch-app-shortcut" class="md-nav__link">
+    Launch app shortcut
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-code" class="md-nav__link">
-    Key code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    Key
+  <a href="#input-key-code" class="md-nav__link">
+    Input key code
   </a>
   
 </li>
@@ -1016,15 +1017,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-event-210" class="md-nav__link">
-    Key event (2.1.0+)
+  <a href="#input-key-event-210" class="md-nav__link">
+    Input key event (2.1.0+)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#text" class="md-nav__link">
-    Text
+  <a href="#input-text" class="md-nav__link">
+    Input text
   </a>
   
 </li>
@@ -1033,6 +1034,26 @@
   <a href="#intent-230" class="md-nav__link">
     Intent (2.3.0+)
   </a>
+  
+    <nav class="md-nav" aria-label="Intent (2.3.0+)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1044,386 +1065,380 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sound-240" class="md-nav__link">
-    Sound (2.4.0+)
+  <a href="#play-sound-240" class="md-nav__link">
+    Play sound (2.4.0+)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#system" class="md-nav__link">
-    System
-  </a>
-  
-    <nav class="md-nav" aria-label="System">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#toggleenabledisable-wifi" class="md-nav__link">
     Toggle/enable/disable WiFi
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-bluetooth" class="md-nav__link">
     Toggle/enable/disable Bluetooth
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-mobile-data" class="md-nav__link">
     Toggle/enable/disable mobile data
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-auto-brightness" class="md-nav__link">
     Toggle/enable/disable auto brightness
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#increasedecrease-brightness" class="md-nav__link">
     Increase/decrease brightness
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-auto-rotate" class="md-nav__link">
     Toggle/enable/disable auto-rotate
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#set-screen-to-portraitlandscape" class="md-nav__link">
     Set screen to portrait/landscape
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#set-screen-orientation-to-0-90-180-or-270" class="md-nav__link">
     Set screen orientation to 0°, 90°, 180° or 270°
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#cycle-through-screen-orientations" class="md-nav__link">
     Cycle through screen orientations
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#volume-updown" class="md-nav__link">
     Volume up/down
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#muteun-mutetoggle-volume-android-60" class="md-nav__link">
     Mute/un-mute/toggle volume (Android 6.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#show-volume-popup" class="md-nav__link">
     Show volume popup
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#increasedecrease-volume-stream" class="md-nav__link">
     Increase/decrease volume stream
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#cycle-through-ringer-modes" class="md-nav__link">
     Cycle through ringer modes
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#change-ringer-mode" class="md-nav__link">
     Change ringer mode
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#cycle-between-vibrate-and-ring" class="md-nav__link">
     Cycle between vibrate and ring
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-do-not-disturb-mode-android-60" class="md-nav__link">
     Toggle/enable/disable do not disturb mode (Android 6.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#expandtoggle-notification-drawer" class="md-nav__link">
     Expand/toggle notification drawer
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#expandtoggle-quick-settings" class="md-nav__link">
     Expand/toggle quick settings
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#collapse-the-status-bar" class="md-nav__link">
     Collapse the status bar
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#playpausetoggle-media" class="md-nav__link">
     Play/pause/toggle media
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#next-track" class="md-nav__link">
     Next track
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#previous-track" class="md-nav__link">
     Previous track
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#fast-forward" class="md-nav__link">
     Fast forward
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#rewind" class="md-nav__link">
     Rewind
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#go-back" class="md-nav__link">
     Go back
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#go-home" class="md-nav__link">
     Go home
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-recent-apps" class="md-nav__link">
     Open recent apps
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggle-split-screen-android-70" class="md-nav__link">
     Toggle split screen (Android 7.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#go-to-the-last-app-android-70" class="md-nav__link">
     Go to the last app (Android 7.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-menu" class="md-nav__link">
     Open menu
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-flashlight" class="md-nav__link">
     Toggle/enable/disable flashlight
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-nfc" class="md-nav__link">
     Toggle/enable/disable NFC
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#move-cursor-to-the-end-of-text" class="md-nav__link">
     Move cursor to the end of text
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleshowhide-on-screen-keyboard-android-70" class="md-nav__link">
     Toggle/show/hide on-screen keyboard (Android 7.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#show-keyboard-picker-up-to-android-90" class="md-nav__link">
     Show keyboard picker (up to Android 9.0)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#cutcopypaste" class="md-nav__link">
     Cut/copy/paste
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#select-word-at-cursor" class="md-nav__link">
     Select word at cursor
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#switch-keyboard" class="md-nav__link">
     Switch keyboard
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#toggleenabledisable-airplane-mode" class="md-nav__link">
     Toggle/enable/disable airplane mode
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#take-screenshot" class="md-nav__link">
     Take screenshot
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-voice-assistant" class="md-nav__link">
     Open voice assistant
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-device-assistant" class="md-nav__link">
     Open device assistant
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-camera-app" class="md-nav__link">
     Open camera app
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#open-settings-app" class="md-nav__link">
     Open settings app
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#lock-device" class="md-nav__link">
     Lock device
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#secure-lock-device" class="md-nav__link">
     Secure lock device
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#turn-onoff-device" class="md-nav__link">
     Turn on/off device
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#show-power-menu" class="md-nav__link">
     Show power menu
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
+  <a href="#answerend-phone-call-240" class="md-nav__link">
+    Answer/end phone call (2.4.0+)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#do-nothing" class="md-nav__link">
     Do nothing
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#dismiss-all-notifications-240" class="md-nav__link">
     Dismiss all notifications (2.4.0+)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#dismiss-most-recent-notification-240" class="md-nav__link">
     Dismiss most recent notification (2.4.0+)
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1444,72 +1459,99 @@
 </a>
 
 
+
   <h1>Actions</h1>
 
-<h2 id="app">App<a class="headerlink" href="#app" title="Permanent link">&para;</a></h2>
+<h3 id="open-app">Open app<a class="headerlink" href="#open-app" title="Permanent link">&para;</a></h3>
 <p>Launch an app.</p>
-<h2 id="app-shortcut">App shortcut<a class="headerlink" href="#app-shortcut" title="Permanent link">&para;</a></h2>
+<h3 id="launch-app-shortcut">Launch app shortcut<a class="headerlink" href="#launch-app-shortcut" title="Permanent link">&para;</a></h3>
 <p>Launch an app shortcut. This is a great way to add more functionality to Key Mapper.</p>
-<h2 id="key-code">Key code<a class="headerlink" href="#key-code" title="Permanent link">&para;</a></h2>
+<h3 id="input-key-code">Input key code<a class="headerlink" href="#input-key-code" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>If you are on Android 11 or newer it is recommended that you install Shizuku. Read more about this <a href="../shizuku/">here</a>.</p>
 <p>If you don't want to install Shizuku then you <strong><em>must</em></strong> be using the Key Mapper GUI Keyboard or the Key Mapper Basic Input Method for this to work. Follow <a href="../key-mapper-keyboard/">this guide</a> to set it up.</p>
 </div>
 <p>Input a simple key event with this key code.</p>
-<h2 id="key">Key<a class="headerlink" href="#key" title="Permanent link">&para;</a></h2>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>You need to be using the Key Mapper GUI Keyboard or the Key Mapper Basic Input Method for this to work. Follow <a href="../key-mapper-keyboard/">this guide</a> to set it up.</p>
-</div>
-<p>This is a shortcut for creating a key code action if you aren't sure what the key code of a button that you have is.</p>
-<h2 id="tap-screen-210-android-70">Tap screen (2.1.0+, Android 7.0+)<a class="headerlink" href="#tap-screen-210-android-70" title="Permanent link">&para;</a></h2>
+<h3 id="tap-screen-210-android-70">Tap screen (2.1.0+, Android 7.0+)<a class="headerlink" href="#tap-screen-210-android-70" title="Permanent link">&para;</a></h3>
 <p>This will tap a point on your screen.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Android restricts what apps can do with this so you won't be able to tap the screen at the same time as Key Mapper and Key Mapper can't tap multiple places at once.</p>
 </div>
-<h2 id="key-event-210">Key event (2.1.0+)<a class="headerlink" href="#key-event-210" title="Permanent link">&para;</a></h2>
+<h3 id="input-key-event-210">Input key event (2.1.0+)<a class="headerlink" href="#input-key-event-210" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>If you are on Android 11 or newer it is recommended that you install Shizuku. Read more about this <a href="../shizuku/">here</a>.</p>
 <p>If you don't want to install Shizuku then you <strong><em>must</em></strong> be using the Key Mapper GUI Keyboard or the Key Mapper Basic Input Method for this to work. Follow <a href="../key-mapper-keyboard/">this guide</a> to set it up.</p>
 </div>
 <p>This will input a more complicated key event than the simple key code action.</p>
-<h2 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h2>
+<h3 id="input-text">Input text<a class="headerlink" href="#input-text" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>You need to be using the Key Mapper GUI Keyboard or the Key Mapper Basic Input Method for this to work. Follow <a href="../key-mapper-keyboard/">this guide</a> to set it up.</p>
 </div>
 <p>This will input any text that you want.</p>
-<h2 id="intent-230">Intent (2.3.0+)<a class="headerlink" href="#intent-230" title="Permanent link">&para;</a></h2>
+<h3 id="intent-230">Intent (2.3.0+)<a class="headerlink" href="#intent-230" title="Permanent link">&para;</a></h3>
 <p>This is a way to communicate with other apps, especially automation apps because they often have a way to trigger their own actions from an intent.</p>
 <p>Read about intents in the Android SDK documentation <a href="https://developer.android.com/reference/android/content/Intent">here</a>.</p>
-<h2 id="phone-call-230">Phone call (2.3.0+)<a class="headerlink" href="#phone-call-230" title="Permanent link">&para;</a></h2>
+<h4 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h4>
+<p>Opening the WiFi settings on the device. These are the only fields that you need to fill in...</p>
+<ul>
+<li>Description for Key Mapper = This can be anything you want because it is just for you to identify this action within the Key Mapper user interface.</li>
+<li>
+<p>Select "Activity".</p>
+</li>
+<li>
+<p>Action = <code>android.settings.WIFI_SETTINGS</code></p>
+</li>
+</ul>
+<h4 id="example-2">Example 2<a class="headerlink" href="#example-2" title="Permanent link">&para;</a></h4>
+<h5 id="1-setting-up-the-tasker-event">1. Setting up the Tasker event<a class="headerlink" href="#1-setting-up-the-tasker-event" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Select "Intent Received" event.</li>
+<li>You only need to fill in the "Action" field. The action can be anything you want but since the action must be unique on the device it is recommended to start it with <code>net.dinglish.android.tasker</code>. In Key Mapper you will have to use the exact same action.
+    <img alt="" src="../../images/intent-event-tasker.jpg" /></li>
+</ol>
+<h5 id="2-setting-up-key-mapper">2. Setting up Key Mapper<a class="headerlink" href="#2-setting-up-key-mapper" title="Permanent link">&para;</a></h5>
+<p>Send a broadcast to launch a Tasker action. These are the only fields that you need to fill in...</p>
+<ul>
+<li>Description for Key Mapper = This can be anything you want because it is just for you to identify this action within the Key Mapper user interface.</li>
+<li>
+<p>Select "Broadcast receiver".</p>
+</li>
+<li>
+<p>Action = The exact same action that you used in Tasker. In my example this would be <code>net.dinglish.android.tasker.MY_ACTION</code>.</p>
+</li>
+</ul>
+<h3 id="phone-call-230">Phone call (2.3.0+)<a class="headerlink" href="#phone-call-230" title="Permanent link">&para;</a></h3>
 <p>This will start calling the number that you put.</p>
-<h2 id="sound-240">Sound (2.4.0+)<a class="headerlink" href="#sound-240" title="Permanent link">&para;</a></h2>
+<h3 id="play-sound-240">Play sound (2.4.0+)<a class="headerlink" href="#play-sound-240" title="Permanent link">&para;</a></h3>
 <p>This action will play a sound. Key Mapper will copy the sound file to its own folder, which means you won't have to worry about losing them. Key Mapper will only play one sound at a time and the sound will play forever until it stops or you pause your key maps. Your sounds will be backed up and restored with your key maps as well.</p>
-<h2 id="system">System<a class="headerlink" href="#system" title="Permanent link">&para;</a></h2>
-<p>There are many actions of this type. They all do something related to your device's system.</p>
-<h4 id="toggleenabledisable-wifi">Toggle/enable/disable WiFi<a class="headerlink" href="#toggleenabledisable-wifi" title="Permanent link">&para;</a></h4>
+<h3 id="toggleenabledisable-wifi">Toggle/enable/disable WiFi<a class="headerlink" href="#toggleenabledisable-wifi" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Requires ROOT permission on Android 10+</p>
+<p>If you aren't rooted then you must install the <a href="https://github.com/x13a/WyFy">WyFy</a> app. You must then use the Intent
+action in Key Mapper to send a broadcast that tells this app to change the WiFi state. In the WyFy's README it outlines
+the Intent parameters. This app works around the issue by targeting API 28 (Android 9), which means the app doesn't need
+to follow the new restrictions in API 29 (Android 10). But this means it can't be approved in the Play Store so you must
+install the apk manually from GitHub or through F-Droid.</p>
 </div>
-<h4 id="toggleenabledisable-bluetooth">Toggle/enable/disable Bluetooth<a class="headerlink" href="#toggleenabledisable-bluetooth" title="Permanent link">&para;</a></h4>
-<h4 id="toggleenabledisable-mobile-data">Toggle/enable/disable mobile data<a class="headerlink" href="#toggleenabledisable-mobile-data" title="Permanent link">&para;</a></h4>
+<h3 id="toggleenabledisable-bluetooth">Toggle/enable/disable Bluetooth<a class="headerlink" href="#toggleenabledisable-bluetooth" title="Permanent link">&para;</a></h3>
+<h3 id="toggleenabledisable-mobile-data">Toggle/enable/disable mobile data<a class="headerlink" href="#toggleenabledisable-mobile-data" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Requires ROOT permission</p>
 </div>
-<h4 id="toggleenabledisable-auto-brightness">Toggle/enable/disable auto brightness<a class="headerlink" href="#toggleenabledisable-auto-brightness" title="Permanent link">&para;</a></h4>
-<h4 id="increasedecrease-brightness">Increase/decrease brightness<a class="headerlink" href="#increasedecrease-brightness" title="Permanent link">&para;</a></h4>
-<h4 id="toggleenabledisable-auto-rotate">Toggle/enable/disable auto-rotate<a class="headerlink" href="#toggleenabledisable-auto-rotate" title="Permanent link">&para;</a></h4>
-<h4 id="set-screen-to-portraitlandscape">Set screen to portrait/landscape<a class="headerlink" href="#set-screen-to-portraitlandscape" title="Permanent link">&para;</a></h4>
-<h4 id="set-screen-orientation-to-0-90-180-or-270">Set screen orientation to 0°, 90°, 180° or 270°<a class="headerlink" href="#set-screen-orientation-to-0-90-180-or-270" title="Permanent link">&para;</a></h4>
-<h4 id="cycle-through-screen-orientations">Cycle through screen orientations<a class="headerlink" href="#cycle-through-screen-orientations" title="Permanent link">&para;</a></h4>
-<h4 id="volume-updown">Volume up/down<a class="headerlink" href="#volume-updown" title="Permanent link">&para;</a></h4>
-<h4 id="muteun-mutetoggle-volume-android-60">Mute/un-mute/toggle volume (Android 6.0+)<a class="headerlink" href="#muteun-mutetoggle-volume-android-60" title="Permanent link">&para;</a></h4>
-<h4 id="show-volume-popup">Show volume popup<a class="headerlink" href="#show-volume-popup" title="Permanent link">&para;</a></h4>
-<h4 id="increasedecrease-volume-stream">Increase/decrease volume stream<a class="headerlink" href="#increasedecrease-volume-stream" title="Permanent link">&para;</a></h4>
+<h3 id="toggleenabledisable-auto-brightness">Toggle/enable/disable auto brightness<a class="headerlink" href="#toggleenabledisable-auto-brightness" title="Permanent link">&para;</a></h3>
+<h3 id="increasedecrease-brightness">Increase/decrease brightness<a class="headerlink" href="#increasedecrease-brightness" title="Permanent link">&para;</a></h3>
+<h3 id="toggleenabledisable-auto-rotate">Toggle/enable/disable auto-rotate<a class="headerlink" href="#toggleenabledisable-auto-rotate" title="Permanent link">&para;</a></h3>
+<h3 id="set-screen-to-portraitlandscape">Set screen to portrait/landscape<a class="headerlink" href="#set-screen-to-portraitlandscape" title="Permanent link">&para;</a></h3>
+<h3 id="set-screen-orientation-to-0-90-180-or-270">Set screen orientation to 0°, 90°, 180° or 270°<a class="headerlink" href="#set-screen-orientation-to-0-90-180-or-270" title="Permanent link">&para;</a></h3>
+<h3 id="cycle-through-screen-orientations">Cycle through screen orientations<a class="headerlink" href="#cycle-through-screen-orientations" title="Permanent link">&para;</a></h3>
+<h3 id="volume-updown">Volume up/down<a class="headerlink" href="#volume-updown" title="Permanent link">&para;</a></h3>
+<h3 id="muteun-mutetoggle-volume-android-60">Mute/un-mute/toggle volume (Android 6.0+)<a class="headerlink" href="#muteun-mutetoggle-volume-android-60" title="Permanent link">&para;</a></h3>
+<h3 id="show-volume-popup">Show volume popup<a class="headerlink" href="#show-volume-popup" title="Permanent link">&para;</a></h3>
+<h3 id="increasedecrease-volume-stream">Increase/decrease volume stream<a class="headerlink" href="#increasedecrease-volume-stream" title="Permanent link">&para;</a></h3>
 <p>This will increase or decrease a specific one of these volume streams.</p>
 <ul>
 <li>Alarm</li>
@@ -1521,61 +1563,72 @@
 <li>Voice call</li>
 <li>Accessibility</li>
 </ul>
-<h4 id="cycle-through-ringer-modes">Cycle through ringer modes<a class="headerlink" href="#cycle-through-ringer-modes" title="Permanent link">&para;</a></h4>
-<h4 id="change-ringer-mode">Change ringer mode<a class="headerlink" href="#change-ringer-mode" title="Permanent link">&para;</a></h4>
-<h4 id="cycle-between-vibrate-and-ring">Cycle between vibrate and ring<a class="headerlink" href="#cycle-between-vibrate-and-ring" title="Permanent link">&para;</a></h4>
-<h4 id="toggleenabledisable-do-not-disturb-mode-android-60">Toggle/enable/disable do not disturb mode (Android 6.0+)<a class="headerlink" href="#toggleenabledisable-do-not-disturb-mode-android-60" title="Permanent link">&para;</a></h4>
-<h4 id="expandtoggle-notification-drawer">Expand/toggle notification drawer<a class="headerlink" href="#expandtoggle-notification-drawer" title="Permanent link">&para;</a></h4>
-<h4 id="expandtoggle-quick-settings">Expand/toggle quick settings<a class="headerlink" href="#expandtoggle-quick-settings" title="Permanent link">&para;</a></h4>
-<h4 id="collapse-the-status-bar">Collapse the status bar<a class="headerlink" href="#collapse-the-status-bar" title="Permanent link">&para;</a></h4>
-<h4 id="playpausetoggle-media">Play/pause/toggle media<a class="headerlink" href="#playpausetoggle-media" title="Permanent link">&para;</a></h4>
-<h4 id="next-track">Next track<a class="headerlink" href="#next-track" title="Permanent link">&para;</a></h4>
-<h4 id="previous-track">Previous track<a class="headerlink" href="#previous-track" title="Permanent link">&para;</a></h4>
-<h4 id="fast-forward">Fast forward<a class="headerlink" href="#fast-forward" title="Permanent link">&para;</a></h4>
-<h4 id="rewind">Rewind<a class="headerlink" href="#rewind" title="Permanent link">&para;</a></h4>
-<h4 id="go-back">Go back<a class="headerlink" href="#go-back" title="Permanent link">&para;</a></h4>
-<h4 id="go-home">Go home<a class="headerlink" href="#go-home" title="Permanent link">&para;</a></h4>
-<h4 id="open-recent-apps">Open recent apps<a class="headerlink" href="#open-recent-apps" title="Permanent link">&para;</a></h4>
-<h4 id="toggle-split-screen-android-70">Toggle split screen (Android 7.0+)<a class="headerlink" href="#toggle-split-screen-android-70" title="Permanent link">&para;</a></h4>
-<h4 id="go-to-the-last-app-android-70">Go to the last app (Android 7.0+)<a class="headerlink" href="#go-to-the-last-app-android-70" title="Permanent link">&para;</a></h4>
-<h4 id="open-menu">Open menu<a class="headerlink" href="#open-menu" title="Permanent link">&para;</a></h4>
-<h4 id="toggleenabledisable-flashlight">Toggle/enable/disable flashlight<a class="headerlink" href="#toggleenabledisable-flashlight" title="Permanent link">&para;</a></h4>
-<h4 id="toggleenabledisable-nfc">Toggle/enable/disable NFC<a class="headerlink" href="#toggleenabledisable-nfc" title="Permanent link">&para;</a></h4>
+<h3 id="cycle-through-ringer-modes">Cycle through ringer modes<a class="headerlink" href="#cycle-through-ringer-modes" title="Permanent link">&para;</a></h3>
+<h3 id="change-ringer-mode">Change ringer mode<a class="headerlink" href="#change-ringer-mode" title="Permanent link">&para;</a></h3>
+<h3 id="cycle-between-vibrate-and-ring">Cycle between vibrate and ring<a class="headerlink" href="#cycle-between-vibrate-and-ring" title="Permanent link">&para;</a></h3>
+<h3 id="toggleenabledisable-do-not-disturb-mode-android-60">Toggle/enable/disable do not disturb mode (Android 6.0+)<a class="headerlink" href="#toggleenabledisable-do-not-disturb-mode-android-60" title="Permanent link">&para;</a></h3>
+<h3 id="expandtoggle-notification-drawer">Expand/toggle notification drawer<a class="headerlink" href="#expandtoggle-notification-drawer" title="Permanent link">&para;</a></h3>
+<h3 id="expandtoggle-quick-settings">Expand/toggle quick settings<a class="headerlink" href="#expandtoggle-quick-settings" title="Permanent link">&para;</a></h3>
+<h3 id="collapse-the-status-bar">Collapse the status bar<a class="headerlink" href="#collapse-the-status-bar" title="Permanent link">&para;</a></h3>
+<h3 id="playpausetoggle-media">Play/pause/toggle media<a class="headerlink" href="#playpausetoggle-media" title="Permanent link">&para;</a></h3>
+<h3 id="next-track">Next track<a class="headerlink" href="#next-track" title="Permanent link">&para;</a></h3>
+<h3 id="previous-track">Previous track<a class="headerlink" href="#previous-track" title="Permanent link">&para;</a></h3>
+<h3 id="fast-forward">Fast forward<a class="headerlink" href="#fast-forward" title="Permanent link">&para;</a></h3>
+<h3 id="rewind">Rewind<a class="headerlink" href="#rewind" title="Permanent link">&para;</a></h3>
+<h3 id="go-back">Go back<a class="headerlink" href="#go-back" title="Permanent link">&para;</a></h3>
+<h3 id="go-home">Go home<a class="headerlink" href="#go-home" title="Permanent link">&para;</a></h3>
+<h3 id="open-recent-apps">Open recent apps<a class="headerlink" href="#open-recent-apps" title="Permanent link">&para;</a></h3>
+<h3 id="toggle-split-screen-android-70">Toggle split screen (Android 7.0+)<a class="headerlink" href="#toggle-split-screen-android-70" title="Permanent link">&para;</a></h3>
+<h3 id="go-to-the-last-app-android-70">Go to the last app (Android 7.0+)<a class="headerlink" href="#go-to-the-last-app-android-70" title="Permanent link">&para;</a></h3>
+<h3 id="open-menu">Open menu<a class="headerlink" href="#open-menu" title="Permanent link">&para;</a></h3>
+<h3 id="toggleenabledisable-flashlight">Toggle/enable/disable flashlight<a class="headerlink" href="#toggleenabledisable-flashlight" title="Permanent link">&para;</a></h3>
+<h3 id="toggleenabledisable-nfc">Toggle/enable/disable NFC<a class="headerlink" href="#toggleenabledisable-nfc" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Requires ROOT permission</p>
 </div>
-<h4 id="move-cursor-to-the-end-of-text">Move cursor to the end of text<a class="headerlink" href="#move-cursor-to-the-end-of-text" title="Permanent link">&para;</a></h4>
-<h4 id="toggleshowhide-on-screen-keyboard-android-70">Toggle/show/hide on-screen keyboard (Android 7.0+)<a class="headerlink" href="#toggleshowhide-on-screen-keyboard-android-70" title="Permanent link">&para;</a></h4>
-<h4 id="show-keyboard-picker-up-to-android-90">Show keyboard picker (up to Android 9.0)<a class="headerlink" href="#show-keyboard-picker-up-to-android-90" title="Permanent link">&para;</a></h4>
+<h3 id="move-cursor-to-the-end-of-text">Move cursor to the end of text<a class="headerlink" href="#move-cursor-to-the-end-of-text" title="Permanent link">&para;</a></h3>
+<h3 id="toggleshowhide-on-screen-keyboard-android-70">Toggle/show/hide on-screen keyboard (Android 7.0+)<a class="headerlink" href="#toggleshowhide-on-screen-keyboard-android-70" title="Permanent link">&para;</a></h3>
+<h3 id="show-keyboard-picker-up-to-android-90">Show keyboard picker (up to Android 9.0)<a class="headerlink" href="#show-keyboard-picker-up-to-android-90" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Requires ROOT permission on Android 8.1 and 9.0</p>
 </div>
-<h4 id="cutcopypaste">Cut/copy/paste<a class="headerlink" href="#cutcopypaste" title="Permanent link">&para;</a></h4>
-<h4 id="select-word-at-cursor">Select word at cursor<a class="headerlink" href="#select-word-at-cursor" title="Permanent link">&para;</a></h4>
-<h4 id="switch-keyboard">Switch keyboard<a class="headerlink" href="#switch-keyboard" title="Permanent link">&para;</a></h4>
-<h4 id="toggleenabledisable-airplane-mode">Toggle/enable/disable airplane mode<a class="headerlink" href="#toggleenabledisable-airplane-mode" title="Permanent link">&para;</a></h4>
-<h4 id="take-screenshot">Take screenshot<a class="headerlink" href="#take-screenshot" title="Permanent link">&para;</a></h4>
+<h3 id="cutcopypaste">Cut/copy/paste<a class="headerlink" href="#cutcopypaste" title="Permanent link">&para;</a></h3>
+<h3 id="select-word-at-cursor">Select word at cursor<a class="headerlink" href="#select-word-at-cursor" title="Permanent link">&para;</a></h3>
+<h3 id="switch-keyboard">Switch keyboard<a class="headerlink" href="#switch-keyboard" title="Permanent link">&para;</a></h3>
+<h3 id="toggleenabledisable-airplane-mode">Toggle/enable/disable airplane mode<a class="headerlink" href="#toggleenabledisable-airplane-mode" title="Permanent link">&para;</a></h3>
+<h3 id="take-screenshot">Take screenshot<a class="headerlink" href="#take-screenshot" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Requires ROOT permission on Android 8.1 and older</p>
 </div>
-<h4 id="open-voice-assistant">Open voice assistant<a class="headerlink" href="#open-voice-assistant" title="Permanent link">&para;</a></h4>
-<h4 id="open-device-assistant">Open device assistant<a class="headerlink" href="#open-device-assistant" title="Permanent link">&para;</a></h4>
-<h4 id="open-camera-app">Open camera app<a class="headerlink" href="#open-camera-app" title="Permanent link">&para;</a></h4>
-<h4 id="open-settings-app">Open settings app<a class="headerlink" href="#open-settings-app" title="Permanent link">&para;</a></h4>
-<h4 id="lock-device">Lock device<a class="headerlink" href="#lock-device" title="Permanent link">&para;</a></h4>
+<h3 id="open-voice-assistant">Open voice assistant<a class="headerlink" href="#open-voice-assistant" title="Permanent link">&para;</a></h3>
+<h3 id="open-device-assistant">Open device assistant<a class="headerlink" href="#open-device-assistant" title="Permanent link">&para;</a></h3>
+<h3 id="open-camera-app">Open camera app<a class="headerlink" href="#open-camera-app" title="Permanent link">&para;</a></h3>
+<h3 id="open-settings-app">Open settings app<a class="headerlink" href="#open-settings-app" title="Permanent link">&para;</a></h3>
+<h3 id="lock-device">Lock device<a class="headerlink" href="#lock-device" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Requires ROOT permission on Android 8.1 and older</p>
 </div>
-<h4 id="secure-lock-device">Secure lock device<a class="headerlink" href="#secure-lock-device" title="Permanent link">&para;</a></h4>
-<p>This is different to 'lock device' because this will force you to unlock your device with your PIN or password and not with biometrics.</p>
-<h4 id="turn-onoff-device">Turn on/off device<a class="headerlink" href="#turn-onoff-device" title="Permanent link">&para;</a></h4>
+<h3 id="secure-lock-device">Secure lock device<a class="headerlink" href="#secure-lock-device" title="Permanent link">&para;</a></h3>
+<p>This is different to 'lock device' because this will force you to unlock your device with your PIN or password and not
+with biometrics.</p>
+<h3 id="turn-onoff-device">Turn on/off device<a class="headerlink" href="#turn-onoff-device" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Requires ROOT permission</p>
 </div>
-<h4 id="show-power-menu">Show power menu<a class="headerlink" href="#show-power-menu" title="Permanent link">&para;</a></h4>
-<h4 id="do-nothing">Do nothing<a class="headerlink" href="#do-nothing" title="Permanent link">&para;</a></h4>
-<h4 id="dismiss-all-notifications-240">Dismiss all notifications (2.4.0+)<a class="headerlink" href="#dismiss-all-notifications-240" title="Permanent link">&para;</a></h4>
-<h4 id="dismiss-most-recent-notification-240">Dismiss most recent notification (2.4.0+)<a class="headerlink" href="#dismiss-most-recent-notification-240" title="Permanent link">&para;</a></h4>
+<h3 id="show-power-menu">Show power menu<a class="headerlink" href="#show-power-menu" title="Permanent link">&para;</a></h3>
+<h3 id="answerend-phone-call-240">Answer/end phone call (2.4.0+)<a class="headerlink" href="#answerend-phone-call-240" title="Permanent link">&para;</a></h3>
+<p>If your phone is ringing then this action will answer the phone or if you are in a call then it will end it. Selecting
+this action will automatically add the constraint to your key map when your device is ringing or is in a call
+respectively.</p>
+<div class="admonition attention if you are using a volume button trigger with these actions then this key map will only work if you are">
+<p class="admonition-title">Attention</p>
+</div>
+<p>using on of the Key Mapper keyboards! This is because Android doesn't tell accessibility services when the volume
+buttons are being pressed when your device is ringing or is in a phone call. But it does tell input methods when they
+are being pressed so you must use a Key Mapper keyboard that tells Key Mapper when the buttons are being pressed.</p>
+<h3 id="do-nothing">Do nothing<a class="headerlink" href="#do-nothing" title="Permanent link">&para;</a></h3>
+<h3 id="dismiss-all-notifications-240">Dismiss all notifications (2.4.0+)<a class="headerlink" href="#dismiss-all-notifications-240" title="Permanent link">&para;</a></h3>
+<h3 id="dismiss-most-recent-notification-240">Dismiss most recent notification (2.4.0+)<a class="headerlink" href="#dismiss-most-recent-notification-240" title="Permanent link">&para;</a></h3>
 
               
             </article>
@@ -1807,10 +1860,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5a9542cf.min.js"></script>
+      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
       
     
   </body>

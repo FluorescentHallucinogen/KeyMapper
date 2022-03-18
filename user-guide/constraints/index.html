@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.keymapper.club/user-guide/constraints/">
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.11">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50e68009.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -34,8 +34,9 @@
     
       
         
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -421,6 +422,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#input-method-isnot-chosen-240" class="md-nav__link">
+    Input method is/not chosen (2.4.0+)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-is-locked-240-android-51" class="md-nav__link">
+    Device is locked (2.4.0+, Android 5.1+)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-is-unlocked-240-android-51" class="md-nav__link">
+    Device is unlocked (2.4.0+, Android 5.1+)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-phone-callnot-in-phone-callphone-ringing-240" class="md-nav__link">
+    In phone call/not in phone call/phone ringing (2.4.0+)
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -673,6 +702,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#input-method-isnot-chosen-240" class="md-nav__link">
+    Input method is/not chosen (2.4.0+)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-is-locked-240-android-51" class="md-nav__link">
+    Device is locked (2.4.0+, Android 5.1+)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-is-unlocked-240-android-51" class="md-nav__link">
+    Device is unlocked (2.4.0+, Android 5.1+)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-phone-callnot-in-phone-callphone-ringing-240" class="md-nav__link">
+    In phone call/not in phone call/phone ringing (2.4.0+)
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -688,6 +745,7 @@
 <a href="https://github.com/sds100/KeyMapper/edit/master/docs/user-guide/constraints.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
+
 
 
   <h1>Constraints</h1>
@@ -721,7 +779,17 @@
 <h3 id="flashlight-is-onoff-240-android-60">Flashlight is on/off (2.4.0+, Android 6.0+)<a class="headerlink" href="#flashlight-is-onoff-240-android-60" title="Permanent link">&para;</a></h3>
 <p>Your mapping will only work if the front or back flashlight is on/off.</p>
 <h3 id="wifi-onoffconnecteddisconnect-240">WiFi on/off/connected/disconnect (2.4.0+)<a class="headerlink" href="#wifi-onoffconnecteddisconnect-240" title="Permanent link">&para;</a></h3>
-<p>Your mapping will only work if it your device's WiFi is on/off or connected/disconnected to a network. </p>
+<p>Your mapping will only work if it your device's WiFi is on/off or connected/disconnected to a
+network.</p>
+<h3 id="input-method-isnot-chosen-240">Input method is/not chosen (2.4.0+)<a class="headerlink" href="#input-method-isnot-chosen-240" title="Permanent link">&para;</a></h3>
+<p>Your mapping will only work if the input method that you are using matches the constraint.</p>
+<h3 id="device-is-locked-240-android-51">Device is locked (2.4.0+, Android 5.1+)<a class="headerlink" href="#device-is-locked-240-android-51" title="Permanent link">&para;</a></h3>
+<p>Your mapping will only work if the device is locked. The screen must still be on because Android doesn't allow apps to
+detect button presses when the screen is off.</p>
+<h3 id="device-is-unlocked-240-android-51">Device is unlocked (2.4.0+, Android 5.1+)<a class="headerlink" href="#device-is-unlocked-240-android-51" title="Permanent link">&para;</a></h3>
+<p>Your mapping will only work if the device is unlocked.</p>
+<h3 id="in-phone-callnot-in-phone-callphone-ringing-240">In phone call/not in phone call/phone ringing (2.4.0+)<a class="headerlink" href="#in-phone-callnot-in-phone-callphone-ringing-240" title="Permanent link">&para;</a></h3>
+<p>Your mapping will only be triggered if you are (not) in a phone call or if your device is ringing.</p>
 
               
             </article>
@@ -953,10 +1021,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5a9542cf.min.js"></script>
+      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
       
     
   </body>

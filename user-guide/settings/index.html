@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.keymapper.club/user-guide/settings/">
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.11">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50e68009.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -34,8 +34,9 @@
     
       
         
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -471,8 +472,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#workaround-for-android-11-bug-that-sets-the-device-id-for-input-events-to-1-230-android-11" class="md-nav__link">
-    Workaround for Android 11 bug that sets the device id for input events to -1 (2.3.0+, Android 11+)
+  <a href="#fix-keyboards-that-are-set-to-us-english-230-android-11" class="md-nav__link">
+    Fix keyboards that are set to US English (2.3.0+, Android 11+)
   </a>
   
 </li>
@@ -758,8 +759,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#workaround-for-android-11-bug-that-sets-the-device-id-for-input-events-to-1-230-android-11" class="md-nav__link">
-    Workaround for Android 11 bug that sets the device id for input events to -1 (2.3.0+, Android 11+)
+  <a href="#fix-keyboards-that-are-set-to-us-english-230-android-11" class="md-nav__link">
+    Fix keyboards that are set to US English (2.3.0+, Android 11+)
   </a>
   
 </li>
@@ -786,6 +787,7 @@
 <a href="https://github.com/sds100/KeyMapper/edit/master/docs/user-guide/settings.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
+
 
 
   <h1>Settings</h1>
@@ -856,14 +858,11 @@ tapping Settings.</p>
 <p>Read more <a href="https://en.wikipedia.org/wiki/Rooting_(Android)">here</a>.</p>
 </div>
 <p>This setting needs to be turned on for some features in Key Mapper to work. You <strong>must</strong> grant Key Mapper root permission in your root management app (e.g Magisk, SuperSU) before you turn this on.</p>
-<h2 id="workaround-for-android-11-bug-that-sets-the-device-id-for-input-events-to-1-230-android-11">Workaround for Android 11 bug that sets the device id for input events to -1 (2.3.0+, Android 11+)<a class="headerlink" href="#workaround-for-android-11-bug-that-sets-the-device-id-for-input-events-to-1-230-android-11" title="Permanent link">&para;</a></h2>
+<h2 id="fix-keyboards-that-are-set-to-us-english-230-android-11">Fix keyboards that are set to US English (2.3.0+, Android 11+)<a class="headerlink" href="#fix-keyboards-that-are-set-to-us-english-230-android-11" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>See the Android 11 bug on Google's issue tracker <a href="https://issuetracker.google.com/issues/163120692">here</a>.</p>
-<p>There is a bug on Android 11 that changes the device id of all input events (e.g pressing buttons, moving joysticks) to -1 when any accessibility services are enabled. This means that apps can't determine which kind of device an input
-event came from. This breaks keyboards that aren't using an American English keyboard layout because Android uses
-the device id of a key event to determine what character to type when a key is pressed. If the device id is -1 Android
-defaults to the American English keyboard layout.</p>
+<p>There is a bug in Android 11 that turning on an accessibility service makes Android think all external devices are the same internal virtual device. Because it can\'t identify these devices correctly, it doesn\'t know which keyboard layout to use with them so it defaults to US English even if it is a German keyboard for example.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -1146,10 +1145,10 @@ defaults to the American English keyboard layout.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5a9542cf.min.js"></script>
+      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
       
     
   </body>
