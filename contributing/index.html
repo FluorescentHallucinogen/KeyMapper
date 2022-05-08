@@ -962,7 +962,7 @@
 <li>Join <a href="http://keymapper.club">the Discord server</a> and download the apks from the #testing-builds channel.</li>
 <li>
 <p>Download the apk from GitHub Actions. This requires a GitHub account.
-    You can get alpha builds <a href="https://github.com/sds100/KeyMapper/actions/workflows/android.yml">here</a> and beta builds <a href="https://github.com/sds100/KeyMapper/actions/workflows/android-release.yml">here</a>.</p>
+    You can get alpha builds <a href="https://github.com/keymapperorg/KeyMapper/actions/workflows/android.yml">here</a> and beta builds <a href="https://github.com/keymapperorg/KeyMapper/actions/workflows/android-release.yml">here</a>.</p>
 <p>Click on a 'workflow run' and then scroll down to see the 'artifacts'. If a build was successful then you can find the apk here.</p>
 </li>
 </ol>
@@ -977,7 +977,7 @@
 </div>
 <h3 id="how-can-i-help">How can I help?<a class="headerlink" href="#how-can-i-help" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Test and experiment new features. All features and bug-fixes that are being worked on for a release can be found on the Projects page <a href="https://github.com/sds100/KeyMapper/projects">here</a>.</li>
+<li>Test and experiment new features. All features and bug-fixes that are being worked on for a release can be found on the Projects page <a href="https://github.com/keymapperorg/KeyMapper/projects">here</a>.</li>
 <li>If you find any bugs or crashes then report them by following the guide <a href="../report-issues/">here</a>.</li>
 </ul>
 <h2 id="contributing-code">Contributing code<a class="headerlink" href="#contributing-code" title="Permanent link">&para;</a></h2>
@@ -1063,15 +1063,18 @@ The <code>system</code> package bundles all the packages which are related to th
 </ol>
 <h5 id="for-every-release">For every release<a class="headerlink" href="#for-every-release" title="Permanent link">&para;</a></h5>
 <ol>
-<li>Manually edit CHANGELOG.md in the develop branch with <em>all</em> changes.</li>
+<li>Manually edit CHANGELOG.md <strong>in the develop branch</strong> with <em>all</em> changes. Cherry pick this into the release branch.</li>
 <li>Open the KeyMapper folder in a terminal and run <code>fastlane beta</code>.</li>
+<li>Squash and merge the release branch into master. Then delete the release branch.</li>
 </ol>
 <h4 id="production-releases">Production releases<a class="headerlink" href="#production-releases" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Check that all translations are merged.</li>
 <li>Credit the translators in the About screen in the app and in the index.md on the documentation website.</li>
-<li>Manually edit CHANGELOG.md with the <em>all</em> changes.</li>
-<li>Open the KeyMapper folder in a terminal and run <code>fastlane prod</code>. This will release the production build to the open-testing track on Google Play. Once it is approved by Google Play you must promote the release from open testing to the production track in Google Play.</li>
+<li>Manually edit CHANGELOG.md <strong>in the develop branch</strong> with <em>all</em> changes. Cherry pick this into the release branch.</li>
+<li>Open the KeyMapper folder in a terminal and run <code>fastlane prod</code>. This will release the production build to the
+   open-testing track on Google Play. Once it is approved by Google Play you must promote the release from open testing
+   to the production track in Google Play.</li>
 <li>Squash and merge the release branch into master. Then delete the release branch.</li>
 </ol>
 <h3 id="code-style">Code Style<a class="headerlink" href="#code-style" title="Permanent link">&para;</a></h3>
@@ -1083,7 +1086,7 @@ the developer so we can add it. Our contact details are in the footer of every p
 <p>We really appreciate translators so thank you! 🙂</p>
 <h2 id="consistency-standards">Consistency Standards<a class="headerlink" href="#consistency-standards" title="Permanent link">&para;</a></h2>
 <h3 id="writing">Writing<a class="headerlink" href="#writing" title="Permanent link">&para;</a></h3>
-<p>It is important to use consistent language within the app's code and documentation. Make sure that your submissions comply with these standards. If you have noticed inconsistencies you can alert the developer with <a href="https://github.com/sds100/KeyMapper/issues/new">an issue</a> or in <a href="http://keymapper.club">the Discord</a>. These standards don't need to be followed in places other than the documentation and source code. Follow this Material Design <a href="https://material.io/design/communication/writing.html">guide</a>.</p>
+<p>It is important to use consistent language within the app's code and documentation. Make sure that your submissions comply with these standards. If you have noticed inconsistencies you can alert the developer with <a href="https://github.com/keymapperorg/KeyMapper/issues/new">an issue</a> or in <a href="http://keymapper.club">the Discord</a>. These standards don't need to be followed in places other than the documentation and source code. Follow this Material Design <a href="https://material.io/design/communication/writing.html">guide</a>.</p>
 <h4 id="case">Case<a class="headerlink" href="#case" title="Permanent link">&para;</a></h4>
 <p>No title case unless it is the title of a webpage, section heading. No title case in the string resources in the source code at all.</p>
 <p>Here are words and phrases that have been spelt inconsistently by the developer and everyone should follow these guidelines. </p>
