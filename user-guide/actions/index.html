@@ -1517,10 +1517,7 @@
 <p>Input a simple key event with this key code.</p>
 <h3 id="tap-screen-210-android-70">Tap screen (2.1.0+, Android 7.0+)<a class="headerlink" href="#tap-screen-210-android-70" title="Permanent link">&para;</a></h3>
 <p>This will tap a point on your screen.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Android restricts what apps can do with this so you won't be able to tap the screen at the same time as Key Mapper and Key Mapper can't tap multiple places at once.</p>
-</div>
+<p>!!! warning Android restricts what apps can do with this so you won't be able to tap the screen at the same time as Key Mapper and Key Mapper can't tap multiple places at once.</p>
 <h3 id="input-key-event-210">Input key event (2.1.0+)<a class="headerlink" href="#input-key-event-210" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -1553,7 +1550,7 @@
 <ol>
 <li>Select "Intent Received" event.</li>
 <li>You only need to fill in the "Action" field. The action can be anything you want but since the action must be unique on the device it is recommended to start it with <code>net.dinglish.android.tasker</code>. In Key Mapper you will have to use the exact same action.
-    <img alt="" src="../../images/intent-event-tasker.jpg" /></li>
+   <img alt="" src="../../images/intent-event-tasker.jpg" /></li>
 </ol>
 <h5 id="2-setting-up-key-mapper">2. Setting up Key Mapper<a class="headerlink" href="#2-setting-up-key-mapper" title="Permanent link">&para;</a></h5>
 <p>Send a broadcast to launch a Tasker action. These are the only fields that you need to fill in...</p>
@@ -1568,10 +1565,8 @@
 </ul>
 <div class="admonition attention">
 <p class="admonition-title">Launching Termux command intents</p>
-<p>You need to open the app info page for Key Mapper in your device settings and grant it the "run commands in termux environment" permission.
-On Android 12+ you must also turn off battery optimisation for Termux so that Android allows Termux to be started from the
-background.</p>
 </div>
+<p>You need to open the app info page for Key Mapper in your device settings and grant it the "run commands in termux environment" permission. On Android 12+ you must also turn off battery optimisation for Termux so that Android allows Termux to be started from the background.</p>
 <h3 id="phone-call-230">Phone call (2.3.0+)<a class="headerlink" href="#phone-call-230" title="Permanent link">&para;</a></h3>
 <p>This will start calling the number that you put.</p>
 <h3 id="play-sound-240">Play sound (2.4.0+)<a class="headerlink" href="#play-sound-240" title="Permanent link">&para;</a></h3>
@@ -1579,12 +1574,8 @@ background.</p>
 <h3 id="toggleenabledisable-wifi">Toggle/enable/disable WiFi<a class="headerlink" href="#toggleenabledisable-wifi" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Requires ROOT permission on Android 10+</p>
-<p>If you aren't rooted then you must install the <a href="https://github.com/x13a/WyFy">WyFy</a> app. You must then use the Intent
-action in Key Mapper to send a broadcast that tells this app to change the WiFi state. In the WyFy's README it outlines
-the Intent parameters. This app works around the issue by targeting API 28 (Android 9), which means the app doesn't need
-to follow the new restrictions in API 29 (Android 10). But this means it can't be approved in the Play Store so you must
-install the apk manually from GitHub or through F-Droid.</p>
 </div>
+<p>If you aren't rooted then you must install the <a href="https://github.com/x13a/WyFy">WyFy</a> app. You must then use the Intent action in Key Mapper to send a broadcast that tells this app to change the WiFi state. In the WyFy's README it outlines the Intent parameters. This app works around the issue by targeting API 28 (Android 9), which means the app doesn't need to follow the new restrictions in API 29 (Android 10). But this means it can't be approved in the Play Store so you must install the apk manually from GitHub or through F-Droid.</p>
 <h3 id="toggleenabledisable-bluetooth">Toggle/enable/disable Bluetooth<a class="headerlink" href="#toggleenabledisable-bluetooth" title="Permanent link">&para;</a></h3>
 <h3 id="toggleenabledisable-mobile-data">Toggle/enable/disable mobile data<a class="headerlink" href="#toggleenabledisable-mobile-data" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
@@ -1657,8 +1648,7 @@ install the apk manually from GitHub or through F-Droid.</p>
 <p class="admonition-title">Requires ROOT permission on Android 8.1 and older</p>
 </div>
 <h3 id="secure-lock-device">Secure lock device<a class="headerlink" href="#secure-lock-device" title="Permanent link">&para;</a></h3>
-<p>This is different to 'lock device' because this will force you to unlock your device with your PIN or password and not
-with biometrics.</p>
+<p>This is different to 'lock device' because this will force you to unlock your device with your PIN or password and not with biometrics.</p>
 <h3 id="turn-onoff-device">Turn on/off device<a class="headerlink" href="#turn-onoff-device" title="Permanent link">&para;</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Requires ROOT permission</p>
@@ -1668,12 +1658,10 @@ with biometrics.</p>
 <p>If your phone is ringing then this action will answer the phone or if you are in a call then it will end it. Selecting
 this action will automatically add the constraint to your key map when your device is ringing or is in a call
 respectively.</p>
-<div class="admonition attention if you are using a volume button trigger with these actions then this key map will only work if you are">
+<div class="admonition attention">
 <p class="admonition-title">Attention</p>
+<p>If you are using a volume button trigger with these actions then this key map will only work if you are using on of the Key Mapper keyboards! This is because Android doesn't tell accessibility services when the volume buttons are being pressed when your device is ringing or is in a phone call. But it does tell input methods when they are being pressed so you must use a Key Mapper keyboard that tells Key Mapper when the buttons are being pressed.</p>
 </div>
-<p>using on of the Key Mapper keyboards! This is because Android doesn't tell accessibility services when the volume
-buttons are being pressed when your device is ringing or is in a phone call. But it does tell input methods when they
-are being pressed so you must use a Key Mapper keyboard that tells Key Mapper when the buttons are being pressed.</p>
 <h3 id="do-nothing">Do nothing<a class="headerlink" href="#do-nothing" title="Permanent link">&para;</a></h3>
 <h3 id="dismiss-all-notifications-240">Dismiss all notifications (2.4.0+)<a class="headerlink" href="#dismiss-all-notifications-240" title="Permanent link">&para;</a></h3>
 <h3 id="dismiss-most-recent-notification-240">Dismiss most recent notification (2.4.0+)<a class="headerlink" href="#dismiss-most-recent-notification-240" title="Permanent link">&para;</a></h3>
